@@ -1,0 +1,44 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for VUTTR",
+  "main": "index.js",
+  "author": "Gustavo Luiz Walker",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch 'src/' src/server.ts",
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "jest",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.18.1",
+    "sequelize": "^5.21.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/bluebird": "^3.5.29",
+    "@types/express": "^4.17.2",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.1",
+    "@types/sequelize": "^4.28.8",
+    "@types/supertest": "^2.0.8",
+    "@types/validator": "^12.0.1",
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.2.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}

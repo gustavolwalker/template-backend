@@ -1,0 +1,13 @@
+# tmp
+.idea
+.DS_Store
+
+# lib
+node_modules
+
+# build
+dist
+
+#__tests__
+__tests__/coverage
+__tests__/database.sqlite
