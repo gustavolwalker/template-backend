@@ -3,6 +3,8 @@ Template to create a new nodejs/express backend;
 
 This template is a basecode to development backend's using NodeJS, Express, Body-Parser, Sequelize, PostgresSQL, TypeScript, Jest, and more.
 
+[toc]
+
 ## Scripts to use
 
 ### dev 
